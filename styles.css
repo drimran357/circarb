@@ -21,3 +21,6 @@
 .news-ticker:hover .news-ticker-track{animation-play-state:paused}
 @keyframes circarb-news-continuous{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @media(prefers-reduced-motion:reduce){.news-ticker-track{animation:none;max-width:100%;overflow:auto}.news-ticker-set[aria-hidden="true"]{display:none}}
+
+/* Suppress obsolete single-message animations on individual ticker spans */
+.topline .news-ticker .ticker-item,.topline .news-ticker .ticker-separator{animation:none;transform:none;position:static;will-change:auto}
